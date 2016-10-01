@@ -16,7 +16,7 @@ class GuestsController < ApplicationController
       flash[:notice] = 'Informacion Actualizada!'
       redirect_to guest_path(@guest)
     else
-      flash[:alert] = 'Ups, algo paso. Intenta de nuevo!'
+      flash[:alert] = "Ups, algo paso. Intenta de nuevo! #{@guest.errors.full_messages}"
       redirect_to :back
     end
   end
