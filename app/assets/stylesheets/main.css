@@ -6,6 +6,17 @@ body {
 	background-size: cover;
 }
 
+@media only screen and (max-width: 7999px) {
+
+    body {
+        background-image: url("https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background.png");
+        background-position: center top;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+}
+
 .subtitle {
 	color: rgba(255, 255, 255, 0.8) !important;
     margin-top: 2em;

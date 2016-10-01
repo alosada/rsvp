@@ -1,11 +1,8 @@
 class GuestsController < ApplicationController
 
-  def index
-    
-  end
-
   def show
     @guest = Guest.find(params[:id])
+    redirect_to edit_guest_path(@guest) unless@guest.viewed?
   end
 
   def edit
