@@ -1,6 +1,7 @@
 <div id='container'>
 	<div class='form-container'>
 		<%= form_for @guest do |f| %>
+			<%= f.text_field :viewed, hidden: true, value: true %>
 			<div>
 			<%= f.text_field :full_name %>
 			</div>
@@ -18,6 +19,7 @@
 				<p>Acompanante(s) :</p>
 			</div>
 			<%= f.fields_for :companions do |c| %>
+			<%= c.text_field :id, hidden: true %>
 				<%= c.text_field :full_name, placeholder: 'Nombre completo' %>
 			<% end %>
 

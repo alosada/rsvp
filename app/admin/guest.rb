@@ -5,5 +5,14 @@ ActiveAdmin.register Guest do
 #
 permit_params :full_name, :email, :plus
 
+form do |f|
+  inputs 'Details' do
+    input :email
+    input :full_name
+    input :plus
+  end
+  actions
+end
+
 
 end

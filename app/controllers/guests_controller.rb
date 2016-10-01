@@ -1,5 +1,9 @@
 class GuestsController < ApplicationController
 
+  def index
+    
+  end
+
   def show
     @guest = Guest.find(params[:id])
   end
@@ -23,7 +27,7 @@ class GuestsController < ApplicationController
   private
 
   def guest_params
-      params.require(:guest).permit(:email,:full_name,:attending, companions_attributes: [:id,:full_name])
+      params.require(:guest).permit(:email,:full_name,:attending, :viewed, companions_attributes: [:id,:full_name])
   end
 
 end

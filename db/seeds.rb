@@ -7,3 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 AdminUser.create!(email: 'alosada@gmail.com', password: 'Seasick15', password_confirmation: 'Seasick15')
 AdminUser.create!(email: 'audreynb@gmail.com', password: 'marques51', password_confirmation: 'marques51')
+AdminUser.create!(email: 'manucmb@gmail.com', password: 'holamanu', password_confirmation: 'holamanu')
+AdminUser.create!(email: 'maldonadogustavo55@gmail.com', password: 'holatavo', password_confirmation: 'holatavo')

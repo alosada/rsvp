@@ -5,6 +5,7 @@ class CreateGuests < ActiveRecord::Migration
       t.string :full_name
       t.boolean :attending
       t.integer :plus
+      t.boolean :viewed, default: false
       t.timestamps null: false
     end
   end
