@@ -5,17 +5,17 @@ body {
     background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 800px) {
+/*@media only screen and (min-width: 800px) {
     body {
     	background-size: cover !important;
     }
-}
+}*/
 
-@media only screen and (max-width: 799px) {
+/*@media only screen and (max-width: 799px) {*/
     body {
         background-size: auto !important;
     }
-}
+/*}*/
 
 .subtitle {
 	color: rgba(255, 255, 255, 0.8) !important;
