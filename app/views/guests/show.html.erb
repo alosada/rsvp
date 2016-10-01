@@ -1,0 +1,34 @@
+<div id='container'>
+	<div class='form-container'>
+		<%= form_for @guest do |f| %>
+			<div>
+			<%= f.text_field :full_name, disabled: true %>
+			</div>
+			<div>
+				<span style='float:left;margin-left:2em'>
+					<%= f.label :attending, "Si voy! :D", :value => "true"  %>
+					<%= f.radio_button :attending, true, disabled: true %>
+				</span>
+				<span style='float:right;margin-right:2em;'>
+					<%= f.label :attending, "No voy! :(", :value => "false", disabled: true %>
+					<%= f.radio_button :attending, false %>
+				</span>
+			</div>
+			<% if @guest.companions.count > 0%>
+				<div class='subtitle'>
+					<p>Acompanante(s) :</p>
+				</div>
+				<%= f.fields_for :companions do |c| %>
+					<%= c.text_field :id, hidden: true %>
+					<%= c.text_field :full_name, placeholder: 'Nombre completo', disabled: true %>
+				<% end %>
+			<% end %>
+		<% end %>
+		<div>
+			<%= link_to 'Editar', edit_guest_path(@guest)%>
+		</div>
+	</div>
+</div>
+
+<!-- bg https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background.png -->
+<!-- in https://dl.dropboxusercontent.com/s/fthfijuh3u1tfif/invite.png -->

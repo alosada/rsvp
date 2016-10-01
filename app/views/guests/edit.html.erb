@@ -1,0 +1,33 @@
+<div id='container'>
+	<div class='form-container'>
+		<%= form_for @guest do |f| %>
+			<div>
+			<%= f.text_field :full_name %>
+			</div>
+			<div>
+				<span style='float:left;margin-left:2em'>
+					<%= f.label :attending, "Si voy! :D", :value => "true"  %>
+					<%= f.radio_button :attending, true %>
+				</span>
+				<span style='float:right;margin-right:2em;'>
+					<%= f.label :attending, "No voy! :(", :value => "false"  %>
+					<%= f.radio_button :attending, false %>
+				</span>
+			</div>
+			<div class='subtitle'>
+				<p>Acompanante(s) :</p>
+			</div>
+			<%= f.fields_for :companions do |c| %>
+				<%= c.text_field :full_name, placeholder: 'Nombre completo' %>
+			<% end %>
+
+			<br>
+			<div>
+		  		<%= f.submit "Enviar" %>
+			</div>
+		<% end %>
+	</div>
+</div>
+
+<!-- bg https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background.png -->
+<!-- in https://dl.dropboxusercontent.com/s/fthfijuh3u1tfif/invite.png -->
