@@ -6,7 +6,7 @@ body {
 	background-size: cover;
 }
 
-@media only screen and (max-width: 7999px) {
+@media only screen and (max-width: 799px) {
 
     body {
         background-image: url("https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background.png");
