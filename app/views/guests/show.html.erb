@@ -10,8 +10,8 @@
 					<%= f.radio_button :attending, true, disabled: true %>
 				</span>
 				<span style='float:right;margin-right:2em;'>
-					<%= f.label :attending, "No voy! :(", :value => "false", disabled: true %>
-					<%= f.radio_button :attending, false %>
+					<%= f.label :attending, "No voy! :(", :value => "false" %>
+					<%= f.radio_button :attending, false, disabled: true %>
 				</span>
 			</div>
 			<% if @guest.companions.count > 0%>
