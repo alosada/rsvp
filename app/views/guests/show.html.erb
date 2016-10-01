@@ -20,11 +20,13 @@
 				</div>
 				<%= f.fields_for :companions do |c| %>
 					<%= c.text_field :id, hidden: true %>
-					<%= c.text_field :full_name, placeholder: 'Nombre completo', disabled: true %>
+					<div>
+						<%= c.text_field :full_name, placeholder: 'Nombre completo', disabled: true %>
+					</div>
 				<% end %>
 			<% end %>
 		<% end %>
-		<div>
+		<div style='padding-top:1em;'>
 			<%= link_to 'Editar', edit_guest_path(@guest)%>
 		</div>
 	</div>
