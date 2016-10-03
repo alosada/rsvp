@@ -1,13 +1,20 @@
 body {
     background-color: black;
+    background: url("https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background.png") no-repeat top center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-#bg{
+/*#bg{
     position: fixed;
     top:-50%;
     left: -50%;
+    right: -50%;
     width: 200%;
     height: 200%;
+    text-align: center;
 }
 
 #bg img{
@@ -16,10 +23,11 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
     min-width: 50%;
     min-height: 50%;
-}
+    margin: auto;
+    display: block;
+}*/
 
 .subtitle {
 	color: rgba(255, 255, 255, 0.8) !important;
@@ -50,6 +58,7 @@ body {
 	margin:0;
 }
 
+@media screen and (min-width: 800px) {
 .form-container{
 	color: rgba(255, 255, 255, 0.8) !important;
 	position: absolute;
@@ -61,6 +70,23 @@ body {
 	font-size: 2em;
 	letter-spacing: 2px;
     z-index: 100;
+}
+}
+
+@media screen and (max-width: 799px) {
+
+    .form-container{
+        color: rgba(255, 255, 255, 0.8) !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 400px;
+        margin-left: -200px;
+        font-family: 'Euro';
+        font-size: 4em;
+        letter-spacing: 2px;
+        z-index: 100;
+    }
 }
 
 .form-container a{
