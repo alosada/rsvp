@@ -1,26 +1,24 @@
 body {
-    background-image: url("https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background.png");
-    background-position: center top;
     background-color: black;
-    background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 800px) {
-    body {
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-    	background-size: cover !important;
-    }
+#bg{
+    position: fixed;
+    top:-50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
 }
 
-@media only screen and (max-width: 799px) {
-    body {
-        -webkit-background-size: auto 100%;
-        -moz-background-size: auto 100%;
-        -o-background-size: auto 100%;
-        background-size: auto 100%;
-    }
+#bg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
 }
 
 .subtitle {
@@ -62,6 +60,7 @@ body {
 	font-family: 'Euro';
 	font-size: 2em;
 	letter-spacing: 2px;
+    z-index: 100;
 }
 
 .form-container a{
