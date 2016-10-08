@@ -7,28 +7,6 @@ body {
   background-size: cover;
 }
 
-/*#bg{
-    position: fixed;
-    top:-50%;
-    left: -50%;
-    right: -50%;
-    width: 200%;
-    height: 200%;
-    text-align: center;
-}
-
-#bg img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    min-width: 50%;
-    min-height: 50%;
-    margin: auto;
-    display: block;
-}*/
-
 .subtitle {
 	color: rgba(255, 255, 255, 0.8) !important;
     margin-top: 2em;
@@ -58,7 +36,6 @@ body {
 	margin:0;
 }
 
-@media screen and (min-width: 800px) {
 .form-container{
 	color: rgba(255, 255, 255, 0.8) !important;
 	position: absolute;
@@ -71,21 +48,20 @@ body {
 	letter-spacing: 2px;
     z-index: 100;
 }
-}
 
 @media screen and (max-width: 799px) {
 
     .form-container{
-        color: rgba(255, 255, 255, 0.8) !important;
-        position: absolute;
-        left: 50%;
+        width: 280px;
+        margin-left: -140px;
         top: 50%;
-        width: 400px;
-        margin-left: -200px;
-        font-family: 'Euro';
-        font-size: 4em;
-        letter-spacing: 2px;
-        z-index: 100;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .form-container span{
+        float:left !important;
+        margin-left: 0 !important;
     }
 }
 
