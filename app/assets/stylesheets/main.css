@@ -1,10 +1,19 @@
 html {
+    background: url("https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/cuadrobg.png") no-repeat top center fixed;
+    background-color: rgba(48, 48, 48, 1);
+    /*background-repeat: repeat;*/
+}
+
+
+.container {
     background: url("https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background.png") no-repeat top center fixed;
     -webkit-background-size: auto 100%;
     -moz-background-size: auto 100%;
     -o-background-size: auto 100%;
     background-size: auto 100%;
-    background-color: rgba(48, 48, 48, 1);
+    /*background-color: rgba(48, 48, 48, 1);*/
+    background-repeat: no-repeat !important;
+    background-color: transparent;
 }
 
 .subtitle {

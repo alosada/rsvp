@@ -76,7 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
+  config.action_mailer.default_url_options = { :host => 'voyono.heroku.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :port           => ENV['MAILGUN_SMTP_PORT'],
@@ -87,3 +87,5 @@ Rails.application.configure do
     :authentication => :plain,
   }
 end
+
+Rails.application.routes.default_url_options[:host] = 'voyono.heroku.com'
