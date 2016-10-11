@@ -1,8 +1,4 @@
 html {
-    background-color: rgba(48, 48, 48, 1);
-}
-
-body {
     background: url("https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background.png") repeat-x top center fixed;
     -webkit-background-size: auto 100%;
     -moz-background-size: auto 100%;
