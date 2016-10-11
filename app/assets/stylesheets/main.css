@@ -1,23 +1,15 @@
-html {
-    background: url("https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/cuadrobg.png") no-repeat top center fixed;
-    background-color: rgba(48, 48, 48, 1);
-    /*background-repeat: repeat;*/
-}
-
-
-.container {
-    background: url("https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background.png") no-repeat top center fixed;
+body {
+    background: url("https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background.png") repeat-x top center fixed;
     -webkit-background-size: auto 100%;
     -moz-background-size: auto 100%;
     -o-background-size: auto 100%;
     background-size: auto 100%;
-    /*background-color: rgba(48, 48, 48, 1);*/
-    background-repeat: no-repeat !important;
+    background-color: rgba(48, 48, 48, 1);
     background-color: transparent;
 }
 
 .subtitle {
-	color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
     margin-top: 2em;
     margin-bottom: .5em; 
     font-family: 'Euro';
@@ -25,7 +17,7 @@ html {
 }
 
 .notice, .alert {
-	color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.8);
     font-family: 'Euro';
     font-size: 3em;
     text-align: center;
@@ -34,27 +26,27 @@ html {
 }
 
 .alert {
-	color: rgba(220, 86, 80, 0.8) !important;
+    color: rgba(220, 86, 80, 0.8) !important;
 }
 
 .messages {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	background-color: rgba(255, 255, 255, 0.8) !important;
-	margin:0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    margin:0;
 }
 
 .form-container{
-	color: rgba(255, 255, 255, 0.8) !important;
-	position: absolute;
-	left: 50%;
-	top: 55%;
-	width: 400px;
-	margin-left: -200px;
-	font-family: 'Euro';
-	font-size: 2em;
-	letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.8) !important;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    width: 400px;
+    margin-left: -200px;
+    font-family: 'Euro';
+    font-size: 2em;
+    letter-spacing: 2px;
     z-index: 100;
 }
 
@@ -75,19 +67,19 @@ html {
 }
 
 .form-container a{
-	color: rgba(255, 255, 255, 0.8) !important;
-	font-family: 'Euro';
-	text-decoration: none;
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-family: 'Euro';
+    text-decoration: none;
 }
 
 .form-container a:hover{
-	color: rgba(220, 86, 80, 0.8) !important;
-	font-family: 'Euro';
+    color: rgba(220, 86, 80, 0.8) !important;
+    font-family: 'Euro';
 }
 
 
 .form-container input[type=text] {
-	color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
     width: 100% !important;
     text-align: center;
     border: none !important;
@@ -101,7 +93,7 @@ html {
 }
 
 .form-container select {
-	color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
     width: 100% !important;
     height: 3em;
     text-align: center;
@@ -116,7 +108,7 @@ html {
 }
 
 .form-container input[type=submit] {
-	color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
     width: 100% !important;
     text-align: center;
     border-radius: 5px !important;
@@ -126,3 +118,4 @@ html {
     font-family: 'Euro';
     background-image: none !important;
 }
+/*"https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/cuadrobg.png")*/
