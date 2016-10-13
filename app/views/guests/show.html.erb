@@ -1,3 +1,7 @@
+<div id='bg_img'>
+	<img src="https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background_hq.png" alt="">
+</div>
+
 <div id='container'>
 	<div class='form-container'>
 		<%= form_for @guest do |f| %>
@@ -5,11 +9,11 @@
 			<%= f.text_field :full_name, disabled: true %>
 			</div>
 			<div>
-				<span style='float:left;margin-left:2em'>
+				<span id="si-voy" >
 					<%= f.label :attending, "Si voy! :D", :value => "true"  %>
 					<%= f.radio_button :attending, true, disabled: true %>
 				</span>
-				<span style='float:right;margin-right:2em;'>
+				<span id="no-voy" >
 					<%= f.label :attending, "No voy! :(", :value => "false" %>
 					<%= f.radio_button :attending, false, disabled: true %>
 				</span>
@@ -26,12 +30,18 @@
 				<% end %>
 			<% end %>
 		<% end %>
-		<div style='padding-top:1em;'>
+		<div style='padding-top:1em;text-align:center;'>
 			<%= link_to 'Editar', edit_guest_path(@guest)%>
 		</div>
 		<br><br><br>
 	</div>
 </div>
 
-<!-- bg https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background.png -->
-<!-- in https://dl.dropboxusercontent.com/s/fthfijuh3u1tfif/invite.png -->
+<script type="text/javascript">
+	window.addEventListener("load", function(){
+		if(document.body.offsetWidth > 1024){
+			var src = "https://dl.dropboxusercontent.com/s/4i75doaame7pkmj/background_hq.png";
+			document.getElementById('bg_img').children[0].src = src;
+		};
+	};
+</script>
