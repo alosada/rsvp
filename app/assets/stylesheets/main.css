@@ -7,6 +7,17 @@ html {
     background-color: rgba(48, 48, 48, 1);
 }
 
+@media screen and (max-width: 1024px) {
+    html {
+        background: url("https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background_hd.png") repeat-x top center fixed;
+        -webkit-background-size: auto 100%;
+        -moz-background-size: auto 100%;
+        -o-background-size: auto 100%;
+        background-size: auto 100%;
+        background-color: rgba(48, 48, 48, 1);
+    }
+}
+
 .subtitle {
     color: rgba(255, 255, 255, 0.8) !important;
     margin-top: 2em;

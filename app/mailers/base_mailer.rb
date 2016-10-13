@@ -3,9 +3,13 @@ class BaseMailer < ActionMailer::Base
  
   default from: 'no-reply@aleyaudrey.com'
  
-  def test(guest)
+  def invite(guest)
+    guest.invite_sent = true
+    guest.save
     @guest = guest
-    mail(to: @guest.email, subject: "Welcome!")
+    mail(to: @guest.email, subject: "Audrey y Ale se casan! ")
   end
 
 end
+
+# BaseMailer.invite(Guest.find(638)).deliver_now
