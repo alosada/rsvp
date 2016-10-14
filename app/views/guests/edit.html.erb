@@ -24,10 +24,12 @@
 					<p>Acompanante(s) :</p>
 				</div>
 				<%= f.fields_for :companions do |c| %>
-					<%= c.text_field :id, hidden: true %>
-					<div>
-						<%= c.text_field :full_name, placeholder: 'Nombre completo', disabled: true %>
-					</div>
+					<% @guest.plus.times do %>
+						<%= c.text_field :id, hidden: true %>
+						<div>
+							<%= c.text_field :full_name, placeholder: 'Nombre completo', disabled: true %>
+						</div>
+					<% end %>
 				<% end %>
 			<%else%>
 				<br>
