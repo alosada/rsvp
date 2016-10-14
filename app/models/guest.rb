@@ -25,4 +25,22 @@ class Guest < ActiveRecord::Base
     self.full_name = self.full_name.split.map{|s| s.capitalize}.join(' ')
   end
 
+  def self.going_count
+    count = 0
+    Guest.where(attending: true).each do |g|
+      count +=1
+      count += g.plus
+    end
+    count
+  end
+
+  def self.invited_count
+    count = 0
+    Guest.all.each do |g|
+      count +=1
+      count += g.plus
+    end
+    count
+  end
+
 end
