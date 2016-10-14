@@ -29,7 +29,7 @@ class Guest < ActiveRecord::Base
     count = 0
     Guest.where(attending: true).each do |g|
       count +=1
-      count += g.plus
+      count += g.plus if g.plus
     end
     count
   end
@@ -38,7 +38,7 @@ class Guest < ActiveRecord::Base
     count = 0
     Guest.all.each do |g|
       count +=1
-      count += g.plus
+      count += g.plus if g.plus
     end
     count
   end
