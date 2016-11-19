@@ -7,7 +7,12 @@ class BaseMailer < ActionMailer::Base
     guest.invite_sent = true
     guest.save
     @guest = guest
-    mail(to: @guest.email, subject: "Audrey y Ale se casan! ")
+    if guest.mex
+      subject = "Audrey y Ale se casan en Mexico!"
+    else
+      subject = "Audrey y Ale se casan!"
+    end
+    mail(to: @guest.email, subject: subject)
   end
 
 end

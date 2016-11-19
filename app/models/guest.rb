@@ -11,6 +11,22 @@ class Guest < ActiveRecord::Base
     full_name
   end
 
+  def invite
+    if self.mex
+      "https://dl.dropboxusercontent.com/s/w98fpnmlhrifngb/invite_mex.png"
+    else
+      "https://dl.dropboxusercontent.com/s/fthfijuh3u1tfif/invite.png"
+    end
+  end
+
+  def background
+    if self.mex
+      "https://dl.dropboxusercontent.com/s/nps287jwthi2hqf/background_hq_mex.png"
+    else
+      "https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background_hq.png"
+    end
+  end
+
   protected
 
   def strong_id
