@@ -13,7 +13,7 @@ class Guest < ActiveRecord::Base
 
   def invite
     if self.mex
-      "https://dl.dropboxusercontent.com/s/w98fpnmlhrifngb/invite_mex.png"
+      "https://dl.dropboxusercontent.com/s/pwn8h241ojy5px2/invite_mex.png"
     else
       "https://dl.dropboxusercontent.com/s/fthfijuh3u1tfif/invite.png"
     end
@@ -21,7 +21,7 @@ class Guest < ActiveRecord::Base
 
   def background
     if self.mex
-      "https://dl.dropboxusercontent.com/s/nps287jwthi2hqf/background_hq_mex.png"
+      "https://dl.dropboxusercontent.com/s/b237k7qk7ozzkby/background_hq_mex.png"
     else
       "https://dl.dropboxusercontent.com/s/1qxxiy7zo716pdo/background_hq.png"
     end
