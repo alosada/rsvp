@@ -7,7 +7,9 @@ class GuestsController < ApplicationController
 
   def edit
     @guest = Guest.find(params[:id])
-    @guest.plus.times {@guest.companions << Companion.new} unless @guest.companions.count == @guest.plus
+    if @guest.plus
+      @guest.plus.times {@guest.companions << Companion.new} unless @guest.companions.count == @guest.plus
+    end
   end
 
   def update
